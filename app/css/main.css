@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../lib/webfonts/metropolis-all-400-normal.woff") format("woff");
+  src: url('../lib/webfonts/metropolis-all-400-normal.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   font-style: bold;
   font-weight: 700;
   font-display: swap;
-  src: url("../lib/webfonts/metropolis-all-700-normal.woff") format("woff");
+  src: url('../lib/webfonts/metropolis-all-700-normal.woff') format('woff');
 }
 
 * {
@@ -28,7 +28,7 @@ body {
 body {
   background-color: #fff;
   color: #1d1f2a;
-  font-family: "Metropolis", Helvetica, Arial, sans-serif;
+  font-family: 'Metropolis', Helvetica, Arial, sans-serif;
   font-size: 16px;
   min-height: 20rem;
 }
@@ -75,8 +75,8 @@ a:hover,
 }
 
 [dir] .form-control,
-[dir="ltr"] .custom-select,
-[dir="rtl"] .custom-select {
+[dir='ltr'] .custom-select,
+[dir='rtl'] .custom-select {
   background-color: #f5f7fa;
 }
 
@@ -151,7 +151,7 @@ a:hover,
 
 #HeaderBox::after {
   clear: both;
-  content: "";
+  content: '';
   display: block;
 }
 
@@ -235,11 +235,11 @@ a:hover,
   vertical-align: middle;
 }
 
-[dir="ltr"] #LogoBox {
+[dir='ltr'] #LogoBox {
   margin-right: 1em;
 }
 
-[dir="rtl"] #LogoBox {
+[dir='rtl'] #LogoBox {
   margin-left: 1em;
 }
 
@@ -256,13 +256,13 @@ a:hover,
   clear: both;
 }
 
-[dir="ltr"] #HeaderBox #WhistleblowerLoginBox form,
-[dir="ltr"] #HeaderBox #WhistleblowerLoginBox label {
+[dir='ltr'] #HeaderBox #WhistleblowerLoginBox form,
+[dir='ltr'] #HeaderBox #WhistleblowerLoginBox label {
   float: right;
 }
 
-[dir="rtl"] #HeaderBox #WhistleblowerLoginBox form,
-[dir="rtl"] #HeaderBox #WhistleblowerLoginBox label {
+[dir='rtl'] #HeaderBox #WhistleblowerLoginBox form,
+[dir='rtl'] #HeaderBox #WhistleblowerLoginBox label {
   float: left;
 }
 
@@ -271,11 +271,11 @@ a:hover,
   text-align: center;
 }
 
-[dir="ltr"] .nested {
+[dir='ltr'] .nested {
   padding-left: 1em;
 }
 
-[dir="rtl"] .nested {
+[dir='rtl'] .nested {
   padding-right: 1em;
 }
 
@@ -358,8 +358,12 @@ a:hover,
 
 @keyframes fadeinout {
   0%,
-  100% { opacity: 0; }
-  50% { opacity: 1; }
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .file-info-row {
@@ -387,15 +391,15 @@ textarea.form-control {
   top: 2rem;
 }
 
-[dir="rtl"] .textarea-btn {
+[dir='rtl'] .textarea-btn {
   left: 1rem;
 }
 
-[dir="ltr"] .textarea-btn {
+[dir='ltr'] .textarea-btn {
   right: 1rem;
 }
 
-input[type="file"] {
+input[type='file'] {
   position: absolute;
   visibility: hidden;
   width: 1px;
@@ -403,7 +407,7 @@ input[type="file"] {
 }
 
 .fa-none::before {
-  content: "\2122";
+  content: '\2122';
   color: transparent;
 }
 
@@ -509,11 +513,11 @@ input[type="file"] {
   background-color: #f2dede;
 }
 
-[dir="ltr"] .selectCard {
+[dir='ltr'] .selectCard {
   text-align: left;
 }
 
-[dir="rtl"] .selectCard {
+[dir='rtl'] .selectCard {
   text-align: right;
 }
 
@@ -535,7 +539,7 @@ input[type="file"] {
 }
 
 .fieldAnswerEntryLabel::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -577,13 +581,13 @@ input[type="file"] {
   text-align: center;
 }
 
-[dir="ltr"] .StepIndex,
-[dir="ltr"] #SubmissionButtons button {
+[dir='ltr'] .StepIndex,
+[dir='ltr'] #SubmissionButtons button {
   margin-right: 1em;
 }
 
-[dir="rtl"] .StepIndex,
-[dir="rtl"] #SubmissionButtons button {
+[dir='rtl'] .StepIndex,
+[dir='rtl'] #SubmissionButtons button {
   margin-left: 1em;
 }
 
@@ -601,11 +605,11 @@ input[type="file"] {
   padding-bottom: 0.5em;
 }
 
-[dir="ltr"] .question .question {
+[dir='ltr'] .question .question {
   padding-left: 1em;
 }
 
-[dir="rtl"] .question .question {
+[dir='rtl'] .question .question {
   padding-right: 1em;
 }
 
@@ -624,11 +628,11 @@ input[type="file"] {
   padding: 1em;
 }
 
-[dir="ltr"] .fileButtons {
+[dir='ltr'] .fileButtons {
   text-align: right;
 }
 
-[dir="rtl"] .fileButtons {
+[dir='rtl'] .fileButtons {
   text-align: left;
 }
 
@@ -756,11 +760,11 @@ text.axis-worktime {
   opacity: 1;
 }
 
-[dir="ltr"] .imageUpload .changePictureButton {
+[dir='ltr'] .imageUpload .changePictureButton {
   left: 1rem;
 }
 
-[dir="rtl"] .imageUpload .changePictureButton {
+[dir='rtl'] .imageUpload .changePictureButton {
   right: 1rem;
 }
 
@@ -788,17 +792,80 @@ tbody td {
   word-break: break-all;
 }
 
-html[dir="rtl"] input[type="email"],
-html[dir="ltr"] input[type="email"],
-html[dir="rtl"] #creditCard,
-html[dir="ltr"] #creditCard,
-html[dir="rtl"] #Receipt,
-html[dir="ltr"] #Receipt {
+html[dir='rtl'] input[type='email'],
+html[dir='ltr'] input[type='email'],
+html[dir='rtl'] #creditCard,
+html[dir='ltr'] #creditCard,
+html[dir='rtl'] #Receipt,
+html[dir='ltr'] #Receipt {
   direction: ltr;
 }
 
-[dir="rtl"] .fa,
-[dir="rtl"] .fas {
+[dir='rtl'] .fa,
+[dir='rtl'] .fas {
   transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.lowtext,
+.lowtext a {
+  color: #ffffff00;
+}
+/* Pilgermair */
+#PrivacyBadge,
+#WhistleblowerLoginBox,
+#LogoutLinkBox {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+#TitleBox .TitleSeparator {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+#TitleBox #PageTitle {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.public #AttributionClause {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.col-md-12 .card.card-secondary {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+#LogoBox img {
+  height: 40px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+[data-ng-class='*public*true*'] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+#Presentation,
+.description,
+#ReceiptText {
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+#WhistleblowerSubmitBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.lowtext,
+.lowtext a {
+  color: #ffffff00;
+}
+body:not(.public) .lowtext,
+body:not(.public) .lowtext a {
+  color: black;
 }
