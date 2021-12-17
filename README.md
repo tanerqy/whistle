@@ -32,3 +32,5 @@ mv -v /usr/share/globaleakz/css/* /usr/share/globaleaks/client/css/
 
 echo "finished"
 ```
+
+See notion for detailed docs
