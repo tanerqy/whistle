@@ -19169,9 +19169,11 @@ html[dir='ltr'] #Receipt {
 .lowtext a {
   color: #ffffff00;
 }
-body:not(.public) .lowtext,
-body:not(.public) .lowtext a {
-  color: black;
+
+[dir] .tooltip-inner,
+.tooltip-inner {
+  text-align: left !important;
+  background-color: #2866a2 !important;
 }
 
 @media print {
